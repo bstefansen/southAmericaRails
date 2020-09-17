@@ -11,12 +11,18 @@ function init() {
   var selectedLayer;
   var selectedFeature;
 
+  // create NatGeoWorldMap layer
+  var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+    maxZoom: 16
+  });
+  Esri_NatGeoWorldMap.addTo(map)
+
   // create and add osm tile layer
   var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   });
-  osm.addTo(map)
 
   // create stamen osm layer (not adding it to map)
   var stamen = L.tileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.png', {
@@ -62,6 +68,7 @@ function init() {
 
   // define basemap and thematic layers and add layer switcher control
   var basemaps = {
+    "NatGeoWorldMap": Esri_NatGeoWorldMap,
     "OSM": osm,
     "Stamen": stamen,
     "WorldImagery": Esri_WorldImagery
