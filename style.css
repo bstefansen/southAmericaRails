@@ -1,0 +1,30 @@
+html {
+}
+
+#mapid {
+    width: 90%;
+    height: 512px;
+    border: 1px solid #ccc;
+}
+
+.leaflet-container {
+    background: #fff;
+}
+
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-right: 100px;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+#brand {
+    text-align: center;
+}
+
+#legend {
+    min-width: 100px;
+}
