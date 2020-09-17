@@ -16,36 +16,33 @@
 	  </head>
 
   <body onload="init()">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="row-fluid">
-            <div class="container-fluid span5">
-              <a id="brand" class="brand" href="https://www.globalmasstransit.net/archive.php?id=3498">Large Metro Rail Systems in South America</a>
-            </div>
-            <div class="container-fluid span7">
-              <a id="brand" class="brand" href="https://blakesportfolio.netlify.app/">Blake Stefansen</a>
-            </div>
-          </div>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="row-fluid">
+          <div id="navbar">
+            <a id="brand" class="brand" href="https://www.globalmasstransit.net/archive.php?id=3498">Large Metro Rail Systems in South America</a>
+            <a id="brand" class="brand" href="https://blakesportfolio.netlify.app/">Author - Blake Stefansen</a>
+            <a id="brand" class="brand" href="https://www.e-education.psu.edu/geog585/node/776">Credit - Jan Oliver Wallgrün</a>
         </div>
+      </div>
     </div>
     <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="span5">
-                <div id="mapid">
-                </div>
-            </div>
-            <div class="span7">      
-                <div>
-                  <table>
-                    <tr>
-                      <td><img id="legend" src="metro_legend.png"/></td>
-                      <td id='summaryLabel'><p>Click a metro rail system on the map to get more information.</p></td>
-                    </tr>
-                  </table>
-                <div id="metroImage"></div>
-              </div>
-            </div>
+      <div class="row-fluid">
+        <div class="span5">
+          <div id="mapid"></div>
         </div>
+        <div class="span7">      
+          <div>
+            <table>
+              <tr>
+                <td><img id="legend" src="metro_legend.png"/></td>
+                <td id='summaryLabel'><p>Click a metro rail system on the map to get more information.</p></td>
+              </tr>
+            </table>
+            <div id="metroImage"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
