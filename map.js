@@ -80,6 +80,11 @@ function init() {
 
   L.control.layers(basemaps,overlays).addTo(map);
 
+  // Create legend
+  var legend = L.control({position: 'bottomright'});
+
+  legend.addTo(map);
+
   // define functions that right icon for a given feature
   function iconByPassday(feature) {
     var icon;
